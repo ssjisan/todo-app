@@ -22,7 +22,7 @@ export default function Form({ setTasks,tasks}) {
   
   const handleAdd = () => {
     const id = Date.now();
-    const allTask = [...tasks, {id, details, status, priority }]
+    const allTask = [...tasks,{ id, details, status, priority}];
     localStorage.setItem("tasks", JSON.stringify(allTask));
     setTasks(allTask);
   }
