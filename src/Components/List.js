@@ -30,9 +30,9 @@ export default function List({ tasks, setTasks }) {
   useEffect(() => {
     setAllPriority(taskPriority);
   }, []);
-  const [details, setDetails] = useState("");
-  const [priority, setPriority] = useState("");
-  const [status, setStatus] = useState("");
+  // const [details, setDetails] = useState("");
+  // const [priority, setPriority] = useState("");
+  // const [status, setStatus] = useState("");
   // const updateTask = [...tasks, { details, priority, status }];
   const handleStatusUpdate = (e, id, priority, details) => {
     const newID = Date.now();
